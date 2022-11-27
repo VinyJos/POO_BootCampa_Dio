@@ -23,7 +23,7 @@ namespace ExemploExplorando
             // Pessoa
 
             Pessoa p1 = new Pessoa("Osvaldo", "Paiol");
-            Pessoa p2 = new Pessoa("Eduarda", "Martilho");
+            Pessoa p2 = new Pessoa(nome:"Eduarda", sobrenome:"Martilho"); // Deixando explícito
             
 
             // Curso
@@ -36,7 +36,9 @@ namespace ExemploExplorando
             cursoDeIngles.AdicionarAluno(p1);
             cursoDeIngles.AdicionarAluno(p2);
 
-            cursoDeIngles.ListarAlunos(); 
+            cursoDeIngles.ListarAlunos();
+            
+            Console.ReadKey();
         }
     }
 }

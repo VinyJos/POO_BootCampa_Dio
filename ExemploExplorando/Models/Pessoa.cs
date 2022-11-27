@@ -14,8 +14,10 @@ namespace ExemploExplorando.Models
 
         }
         public Pessoa(string nome, string sobrenome)
-        {
-
+        { 
+          //[propriedade] [value]
+            Nome = nome;
+            Sobrenome = sobrenome;
         }
 
         // Campo de armazenamento
