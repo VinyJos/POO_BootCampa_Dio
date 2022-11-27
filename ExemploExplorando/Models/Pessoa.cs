@@ -6,7 +6,18 @@ namespace ExemploExplorando.Models
 {
     // Classe
     public class Pessoa
-    {   
+    {
+        //Construtor
+
+        public Pessoa()
+        {
+
+        }
+        public Pessoa(string nome, string sobrenome)
+        {
+
+        }
+
         // Campo de armazenamento
         private string _nome; 
         private int _idade;

@@ -22,13 +22,9 @@ namespace ExemploExplorando
 
             // Pessoa
 
-            Pessoa p1 = new Pessoa();
-            p1.Nome = "Vinicius";
-            p1.Sobrenome = "José";
+            Pessoa p1 = new Pessoa("Osvaldo", "Paiol");
+            Pessoa p2 = new Pessoa("Eduarda", "Martilho");
             
-            Pessoa p2 = new Pessoa();
-            p2.Nome = "Amanda";
-            p2.Sobrenome = "Lacerda";
 
             // Curso
 
