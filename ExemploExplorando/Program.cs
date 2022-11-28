@@ -20,7 +20,7 @@ namespace ExemploExplorando
             //p1.Apresentar();
             //p2.Apresentar();
 
-            // Pessoa
+            // Pessoa, chamando o construtor
 
             Pessoa p1 = new Pessoa("Osvaldo", "Paiol");
             Pessoa p2 = new Pessoa(nome:"Eduarda", sobrenome:"Martilho"); // Deixando explícito
@@ -37,6 +37,14 @@ namespace ExemploExplorando
             cursoDeIngles.AdicionarAluno(p2);
 
             cursoDeIngles.ListarAlunos();
+
+            // Chamando o Desconstrutor
+
+            (string nome, string sobrenome) = p1;
+
+            Console.WriteLine($"{nome} {sobrenome}");
+
+            
             
             Console.ReadKey();
         }

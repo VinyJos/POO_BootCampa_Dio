@@ -19,6 +19,13 @@ namespace ExemploExplorando.Models
             Nome = nome;
             Sobrenome = sobrenome;
         }
+        // Desconstruir
+        public void Desconstruct(out string nome, out string sobrenome)
+        {
+            // prestar atenção na formatação 
+            nome = Nome;
+            sobrenome = Sobrenome;
+        }
 
         // Campo de armazenamento
         private string _nome; 
@@ -27,7 +34,7 @@ namespace ExemploExplorando.Models
         // Propriedades
         public string Nome 
         {   
-            // Obter o valor com tratamento de letra maúscula.
+            // Obter o valor com tratamento de letra maiúscula.
             get => _nome.ToUpper();
           
             // Atribui o valor
